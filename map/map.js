@@ -31,8 +31,9 @@ const characters = [
 
 // Map 
 // 1. Get array of all names 
-const names = characters.map(characters => {
-    return characters.name;
-});
+const names = characters.map((characters) => characters.name);
 
 console.log(names)
+// 2. Get array of all heights
+const heights = characters.map(character => character.height);
+console.log(heights);
