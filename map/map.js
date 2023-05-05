@@ -31,12 +31,24 @@ const characters = [
 
 // Map 
 // 1. Get array of all names 
-const names = characters.map((characters) => characters.name);
+const names = characters.map((character) => character.name);
 
 console.log(names)
 // 2. Get array of all heights
 const heights = characters.map(character => character.height);
 console.log(heights);
 // 3. Get array of objects with jus tname and height properties
-const minifiedRecords = characters.map(characters => ({ name: characters.name, height: characters.height }));
+const minifiedRecords = characters.map(character => ({
+    name: character.name,
+    height: character.height
+}));
 console.log(minifiedRecords)
+// 4. Get total numbers of characters in all the characters names 
+const firstNames = characters.map(character => character.name.split(" ")[0]);
+console.log(firstNames);
+
+// 5. Get total numbers of characters in all the characters last names 
+const lastNames = characters.map(character => character.name.split(" ")[1]);
+console.table(lastNames);
+// 6. Display data as a table
+console.table(characters);
