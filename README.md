@@ -1,4 +1,4 @@
-# SelfDrivingJavascript
+# Array methods
 
 
 ## Map function
