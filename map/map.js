@@ -52,3 +52,15 @@ const lastNames = characters.map(character => character.name.split(" ")[1]);
 console.table(lastNames);
 // 6. Display data as a table
 console.table(characters);
+
+// 7. Display remaining 3 attributes. 
+const restRecords = characters.map(character => ({
+    mass: character.mass,
+    eye_color: character.eye_color,
+    gender: character.gender,
+}));
+// normal log
+console.log(restRecords);
+// console table
+console.table(restRecords);
+
