@@ -28,3 +28,11 @@ const characters = [
         gender: 'male',
     },
 ];
+
+// Map 
+// 1. Get array of all names 
+const names = characters.map(characters => {
+    return characters.name;
+});
+
+console.log(names)
