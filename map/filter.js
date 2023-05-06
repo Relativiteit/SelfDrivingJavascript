@@ -41,7 +41,6 @@ const characters = [
 ];
 
 // Filters 
-
 // 1. Get Character with a power higher then 100 
 const greaterPower = characters.filter((character) => character.power > 10);
 // console.log(greaterPower);
@@ -53,6 +52,12 @@ const smallerBoys = characters.filter((character) => character.height < 175);
 const ninjaBoys = characters.filter((character) =>
     character.job === 'Shinobi');
 console.log(ninjaBoys);
+// Insert in array new value 
+ninjaBoys.push({ hair: 'bald' });
+console.log(ninjaBoys)
+// Remove last saved value
+ninjaBoys.pop();
+console.log(ninjaBoys);
 // 4. Get all characters of country 日本 
 const japaneseCharacters = characters.filter((character) => character.country === 'Japan');
-console.table(japaneseCharacters);
+// console.table(japaneseCharacters);

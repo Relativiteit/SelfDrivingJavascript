@@ -37,7 +37,7 @@ console.log(names)
 // 2. Get array of all heights
 const heights = characters.map(character => character.height);
 console.log(heights);
-// 3. Get array of objects with jus tname and height properties
+// 3. Get array of objects with just name and height properties
 const minifiedRecords = characters.map(character => ({
     name: character.name,
     height: character.height
