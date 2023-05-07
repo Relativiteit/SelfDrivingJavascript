@@ -45,6 +45,24 @@ const byMass = characters.sort((a, b) => {
 
 // 2. Sort by height 
 const byHeight = characters.sort((a, b) => {
+    // ascending
     return a.height - b.height
+    // descending
+    // return b.height - a.height 
 });
 console.log(byHeight);
+
+// 3. Sort by Name 
+const byName = characters.sort((a, b) => {
+    if (a.name < b.name) return 1;
+    return -1;
+
+})
+// console.log(byName);
+
+// 4. Sort by gender
+const byGender = characters.sort((a, b) => {
+    if (a.gender === 'female') return 1;
+    return -1;
+})
+console.log(byGender)
