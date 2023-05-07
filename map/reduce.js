@@ -1,6 +1,3 @@
-const { Console } = require("console");
-const { cursorTo } = require("readline");
-
 const characters = [
     {
         name: 'Luke Skywalker',
@@ -56,7 +53,7 @@ const charactersByEyeColor = characters.reduce((acc, cur) => {
     } else {
         acc[color] = 1
     }
-    return acc;
+    return acc
 }, {})
 console.log(charactersByEyeColor);
 // 4. Get the total number of characters in all the characters names 
